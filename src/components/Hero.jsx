@@ -15,6 +15,7 @@ const Hero = () => {
         const paragraphSplit =new SplitText('.subtitle', {type:'lines'})
 
         heroSplit.chars.forEach((char)=> char.classList.add('text-gradient'));
+        // here we decided to add a text gradient to each text, the text gradient is a className that has gradient properites
 
         gsap.from(heroSplit.chars, {opacity:0, yPercent:100, duration:1.8,ease:'expo.out', stagger:0.07})
         gsap.from(paragraphSplit.lines, {opacity:0, yPercent:100, duration:1.8, ease:'expo.out', stagger:0.09, delay:1.2})
